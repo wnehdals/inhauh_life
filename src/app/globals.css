@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #ffffff;
+  --foreground: #354153;
+  --secondary: #697383;
+  --muted: #b4bbcb;
+  --surface: #f2f3f8;
+  --hairline: #e5e8ef;
+  --region-surface: #f9f9fb;
+
+  --primary: #0078ff;
+
+  --success: #1aa260;
+  --success-bg: #e7f7ef;
+  --success-text: #16824c;
+
+  --warning: #f5a623;
+  --warning-bg: #fef3e2;
+  --warning-text: #b26b00;
+
+  --danger: #e5484d;
+  --danger-bg: #fdecec;
+  --danger-text: #c22c31;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-background: var(--canvas);
+  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-hairline: var(--hairline);
+  --color-region-surface: var(--region-surface);
+
+  --color-primary: var(--primary);
+
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-success-text: var(--success-text);
+
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-text: var(--warning-text);
+
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-text: var(--danger-text);
+
+  --font-sans: var(--font-pretendard), -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+  --radius-sm: 4px;
+  --radius-action: 14px;
+  --radius-card: 12px;
+  --radius-content-card: 16px;
+  --radius-full: 48px;
+
+  --text-h1: 1.625rem;
+  --text-h1--line-height: 1.19;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 1.375rem;
+  --text-h2--line-height: 1.19;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 1rem;
+  --text-h3--line-height: 1.19;
+  --text-h3--font-weight: 600;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.19;
+  --text-body--font-weight: 400;
+
+  --text-caption: 0.875rem;
+  --text-caption--line-height: 1.19;
+  --text-caption--font-weight: 400;
+
+  --shadow-floating: 0 1px 2px rgba(53, 65, 83, 0.04),
+    0 4px 8px rgba(53, 65, 83, 0.06), 0 12px 24px rgba(53, 65, 83, 0.08);
+}
+
+body {
+  background: var(--region-surface);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
